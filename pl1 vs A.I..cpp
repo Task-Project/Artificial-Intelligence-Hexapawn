@@ -148,7 +148,8 @@ void player1(){
 	do{
 		cout<<"inserisci le coordinate del pezzo che vuoi muovere"<<endl;
 		cin>>i>>j;
-		cout<<"inserisci la direzione di dove lo vuoi spostare (w,a,s,d)"<<endl;
+		cout<<"inserisci la direzione di dove lo vuoi spostare (w,a,d)"<<endl;
+		cout<<"w = avanti"<<endl<<"a = mangia a sinistra"<<endl<<"d = mangia a destra"<<endl;
 		cin>>direction;
 		cord=can_move(i,j,direction,1);
 		if(cord.first==-1){
